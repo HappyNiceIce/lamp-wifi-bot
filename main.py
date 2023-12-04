@@ -58,7 +58,7 @@ async def quere_color(callback: types.CallbackQuery):
                 brightness_value = int(message.text)
                 if 0 <= brightness_value <= 255:
                     # Вы можете использовать полученное значение яркости здесь
-                    await message.answer(f"Вы ввели яскравість: {str(brightness_value)}")
+                    await message.answer(f"Ви ввели яскравість: {str(brightness_value)}")
                     pars.brightness(value=str(brightness_value))
                     await state.finish()
                 else:
